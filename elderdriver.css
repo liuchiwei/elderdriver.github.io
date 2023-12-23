@@ -1,0 +1,405 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* 導航欄 */
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:#4F5559; 
+  color: white; 
+  padding: 20px; 
+  z-index: 1000; 
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline;
+  margin-right: 20px; 
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#navbar a:hover{
+  color: #E6C85C;
+}
+
+
+
+#animate__animated  {
+  display: inline-block;
+  /* margin: 0 0.5rem; */
+
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+
+
+
+
+
+
+/* 新聞圖片 */
+
+/* #news {
+  
+    max-width: 70%;
+    height: auto; 
+  
+}  */
+
+
+
+/* #news1 {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+  right: 60px;
+} */
+
+/* #news2 {
+  position: absolute;
+  top: 400px;
+  left: 150px;
+  right: 60px;
+} */
+
+/* #news4 {
+  position: absolute;
+  top: 250px;
+  left: 325px;
+  right: 60px;
+} */
+
+/* #news5 {
+  position: absolute;
+  top: 320px;
+  left: 325px;
+  right: 60px;
+} */
+
+/* #news3 {
+  position: absolute;
+  top: 440px;
+  left: 325px;
+  right: 60px;
+} */
+
+/* #news6 {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  right: 60px;
+} */ 
+
+
+
+
+/* Section */
+
+
+section {
+  background-color: #91A6BA;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+
+/* 文字部分 */
+
+.content-div {
+padding: 10px;
+text-align:justify; 
+margin: 0 150px; 
+margin-top: 20px; 
+color: white
+}
+
+
+.content-title {
+  background-color: transparent !important; 
+  color: #343a40 !important; 
+  padding: 20px; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.sub-title {
+  background-color: transparent !important; 
+  color: #343a40 !important; 
+  font-size: 14px; 
+}
+
+
+/* 進度條 */
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7.5px; 
+  background-color: #E6C85C; 
+  z-index: 1000; 
+}
+
+
+#opening {
+  text-align: center;
+  width: 100%;
+}
+
+
+
+.sticky-top {
+  position: sticky;
+  top: 30px; 
+  width: 50%;
+  height: 300px; 
+  overflow: hidden;
+  z-index: 990; 
+}
+
+
+.col-6 {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+/* footer */
+
+footer {
+  background-color: #343a40;
+  text-align: center;
+  color: white;
+  margin: 0; 
+  padding: 0; 
+}
+
+footer p {
+  margin-bottom: 0; 
+}
+
+
+
+.text-center{
+  color: white;
+}
+
+
+/* 翻翻卡 */
+
+.card-container {
+  width: 190px;
+  height: 110px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.cover, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.cover {
+  transform: rotateY(0deg); 
+ 
+}
+
+.card-container:hover .cover {
+  transform: rotateY(180deg); 
+}
+
+.back {
+  transform: rotateY(180deg); 
+ 
+}
+
+.card-container:hover .back {
+  transform: rotateY(0deg); 
+}
+
+
+#section4 .test2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  width: 200px; 
+  height: 150px; 
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-container:hover img {
+  transform: scale(1.1);
+}
+
+
+/* 標頭字型 */
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  text-align: center;
+}
+
+/* 標頭影片 */
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  margin-left: -10%;
+  margin-right: -10%;
+  object-fit: cover;
+  background-color: transparent; 
+}
+
+#video {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: -20vh;
+  object-fit: cover;
+}
+
+#header, #section1 {
+  width: 100%;
+  height: 100vh;
+}
+
+
+#section4{
+  background-color: #343a40;
+}
+
+
+#section1_1, #section1_2, #section1_3, #section1_4, #section1_5{
+  background-color: white;
+}
+
+
+/* 畫螢光筆特效 */
+
+.spot {
+	background-image: linear-gradient(90deg, transparent 50%, #343a40 50%);
+	background-position: 0%;
+	background-size: 200%;
+	font-weight: 400;
+}
+
+.spotted {
+	background-position: -100%;
+	transition: all 1s;
+}
+
+
+/* 圖表 */
+
+#section1_1 {
+  display: flex;
+  position: relative; 
+  z-index: 990;
+}
+
+#section1_2 div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+#section1_3 div:first-child {
+  background-image: url("");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+#section1_4 div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+#section1_5 div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+
+/* 三位老人 */
+
+#section2_1 div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+
+
+#section2_2 div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+
+#section2_3 div:first-child {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+
+
+

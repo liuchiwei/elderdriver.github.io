@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活到老、開到老？高齡長者駕駛之路</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- 自訂 CSS -->
+    <link rel="stylesheet" href="css/elderdriver.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- animate CSS -->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- 網站icon -->
+    <link rel="icon" href="assets/motorcycle.ico" type="image/x-icon">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('spotted');
+                    }
+                });
+            });
+
+            const spotElements = document.querySelectorAll('.spot');
+            spotElements.forEach(spotElement => {
+                observer.observe(spotElement);
+            });
+        });
+    </script>
+</head>
+
+
+<body>
+    
+    <nav id="navbar">
+        <ul>
+          <li><a href="#section1"> 高齡駕駛成新危機
+        </a></li>
+          <li><a href="#section2">他們的故事
+        </a></li>
+          <li><a href="#section3">認知測驗測什麼？
+        </a></li>
+          <li><a href="#section5_bridge">換照制度是完美解方？
+        </a></li>
+          <li><a href="#section6_pre">未來展望
+        </a></li>
+        </ul>
+      </nav>
+    
+    <div id="progress-bar"></div>
+
+    <section id="news" >
+        <div class="container" style="margin-top: 20%;">
+            <div class="row">
+    
+                <!-- 第一個 column -->
+                <div class="col-4">
+                    <div class="news" style="background-color: #91A6BA;">
+                        <img src="assets/新聞標1.png" width="80%" id="news1" class="animate__animated animate__fadeIn">
+                        <img src="assets/新聞標2.png" width="80%" id="news2" class="animate__animated animate__fadeIn">
+                    </div>
+                </div>
+    
+                <!-- 第二個 column -->
+                <div class="col-4">
+                    <div class="news" style="background-color: #91A6BA;">
+                        <img src="assets/新聞標4.png" width="80%" id="news4" class="animate__animated animate__fadeIn">
+                        <img src="assets/新聞標5.png" width="80%" id="news5" class="animate__animated animate__fadeIn">
+                        <img src="assets/新聞標3.png" width="80%" id="news3" class="animate__animated animate__fadeIn">
+                    </div>
+                </div>
+    
+                <!-- 第三個 column -->
+                <div class="col-4">
+                    <div class="news" style="background-color: #91A6BA;">
+                        <img src="assets/新聞標6.png" width="80%" id="news6" class="animate__animated animate__fadeIn">
+                    </div>
+                </div>
+    
+    
+            </div>
+        </div>
+        <script>
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+                
+                setTimeout(function () {
+                    document.getElementById("news5").classList.add("animate__fadeIn");
+                }, 500);
+                setTimeout(function () {
+                    document.getElementById("news6").classList.add("animate__fadeIn");
+                }, 1000);
+                setTimeout(function () {
+                    document.getElementById("news3").classList.add("animate__fadeIn");
+                }, 1500);
+                setTimeout(function () {
+                    document.getElementById("news2").classList.add("animate__fadeIn");
+                }, 2000);
+                setTimeout(function () {
+                    document.getElementById("news4").classList.add("animate__fadeIn");
+                }, 2500);
+            });
+        </script>
+        
+    </section>
+
+    
+    
+
+    <section id="opening" style="background: linear-gradient(to bottom,#91A6BA 0%, #343a40 100%);">
+        <div class="container" style="color:white";>
+            <p style="font-size: larger;">高齡駕駛肇事率逐年攀升，儼然成為「行人地獄」之外，另一個重大道安危機。</p>
+            <p style="font-size: larger;">當台灣即將迎向超高齡化社會，未來勢必將有更多長者駕駛上路。社會又該如何面對這個問題？</p>
+        </div>
+    </section>
+
+
+    <header id="header">
+        <div class="container">
+            <div id="v1frame" style="position: relative;">
+    
+                <!-- Text box -->
+                <div class="text-box">
+                    <div class="slideanimate">
+                        <div>
+                         <h1 style="padding-top: 30%; font-family: 'Noto Sans CJK SC', sans-serif; font-weight:900; color: #E6C85C; font-size: 50px; margin-top: -40%;"><span class="spot">活到老、開到老？<br>高齡長者駕駛之路</span></h1>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Video -->
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/opening.MP4" type="video/mp4">
+                </video>
+    
+            </div>
+        </div>
+    </header>
+
+
+    <!-- 第一章：高齡駕駛成新危機 -->
+    <section id="section1" style="background: linear-gradient(to bottom,#343a40 0%, #91A6BA 40%, white 100%);">
+        <div class="container">  
+          <div class="content-div">
+
+            <p>外媒《CNN Travel》曾以「行人地獄」形容台灣交通狀況，讓此問題登上國際版面。</p>
+            <p>但其實不只行人地獄，「高齡駕駛」的道安問題，也悄悄成了台灣的隱形交通危機......</p>
+         </div>
+        </div> 
+    </section>
+
+    <!-- 圖表1 -->
+    <section class="row" id="section1_1" style="height: 200vh; display: flex;">
+        <div class="sticky-top col-6" style="position: sticky; top: 0; height: 100vh;">
+            <img src="assets/所有死傷.png" style="width: 80%; height: 80%; object-fit: cover;margin-top: 20%; margin-left: 20%;">
+        </div>
+        <div class="col-6">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; margin-right: 20%; color:#E6C85C">全國交通事故死傷人數創新高</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">翻開交通部數據，全國因交通事故而死傷的人數逐年攀升，在去（2022）年來到歷史高點，約50萬人。 </p>
+        </div>
+    </section>
+
+    <!-- 圖表2 -->
+    <section class="row" id="section1_2" style="height: 200vh; display: flex;">
+        <div class="sticky-top col-6" style="position: sticky; top: 0; height: 100vh;">
+            <img src="assets/高齡死傷.png" style="width: 80%; height: 80%; object-fit: cover;margin-top: 20%; margin-left: 20%;">
+        </div>
+        <div class="col-6">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; margin-right: 20%; color:#E6C85C">其中，高齡駕駛事故的死傷人數也逐年攀升</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">若聚焦在65歲以上的這群高齡駕駛，可以發現他們的行車安全問題也充滿隱憂。</p>
+            <p style="margin-right: 20%;text-align: justify;">去（2022）年共有約6萬5千多人因高齡駕駛事故導致受傷，甚至死亡。這5年來，死傷人數更有增加趨勢。</p>
+        </div>
+    </section>
+    
+    <!-- 圖表3 -->
+    <section id="section1_3" class="row" style="height:200vh; display: flex;">
+        <div class="sticky-top col-6" style="height:100vh;">
+            <img src="assets/運具統計.png" style="width: 80%; height: 80%; object-fit: cover;margin-top: 20%; margin-left: 20%;">
+        </div>
+        <div class="col-6">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; margin-right: 20%; color:#E6C85C">機車成為造成高齡駕駛死傷數最多的運具</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">進一步檢視高齡駕駛死傷狀況與各運具之間的關係，可以發現「普通重型機車」，也就是排氣量介於50至250c.c.的機車，是高齡駕駛死傷人數運具排行第一名。不僅佔比近7成，去（2022）年更有超過4萬人因機車事故而傷亡。</p>
+        </div>
+    </section>
+    
+    <!-- 圖表4 -->
+    <section id="section1_4" class="row" style="height:200vh; display: flex;">
+        <div class="sticky-top col-6" style="height:100vh;">
+            <img src="assets/機車死傷.png" style="width: 80%; height: 80%; object-fit: cover;margin-top: 20%; margin-left: 20%;">  
+        </div>
+        <div class="col-6">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; margin-right: 20%; color:#E6C85C">高齡機車騎士死傷數攀升</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">高齡駕駛發生交通事故，除了可能傷及其他用路人，長者自身的安全性也令人感到憂心。</p>
+            <p style="margin-right: 20%;text-align: justify;">以事故大宗運具──機車為例，高齡機車騎士的死傷數在近5年有明顯增長趨勢。</p>
+        </div>
+    </section>
+
+    <!-- 圖表5 -->
+    <section id="section1_5" class="row" style="height:200vh;  display: flex;">
+        <div class="sticky-top col-6" style="height:100vh;">
+            <img src="assets/機車自撞.png" style="width: 80%; height: 80%; object-fit: cover;margin-top: 20%; margin-left: 20%;">  
+        </div>
+        <div class="col-6">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; margin-right: 20%; color:#E6C85C">高齡駕駛騎機車自撞造成的死傷也不可忽視</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">另一方面，由於身體老化，高齡駕駛較容易有注意力不敏銳、反應不及的狀況，因此在實際駕駛時，「自撞」也是釀成傷亡的一大因素。</p>
+            <p style="margin-right: 20%;text-align: justify;">統計數據顯示，高齡駕駛在騎機車時因自撞而導致的死傷人數有所增長。去（2022）年更有近4千名駕駛因此而傷亡。 </p>
+        </div>
+    </section>
+
+            
+         
+    <!-- 第一章：bridge -->
+  
+    <section id="section1_6" style="background: linear-gradient(to bottom,white 0%, #91A6BA 100%);">
+        <div class="container">
+                
+            <div class="content-div">
+                <div class="slideanimate">
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <h1>&nbsp;</h1>
+                    <p>政府為解決高齡駕駛的道安危機，除了透過換照制度把關外，也招募、培訓一群向高齡者宣講道路交通安全知識的老師──「路老師」，深入各地鄉鎮宣講道安觀念，期盼可以透過教育降低事故率，但是成效仍不彰。</p>
+    
+                    <p>一位不願具名的路老師坦言，部分長輩在駕駛時，會覺得自己判斷的對、開了一輩子都沒事。因此對於他人的勸導，往往會認為：<span class="spot">「為什麼你跟我講，我很危險？」</span>不認為、也未察覺高齡駕駛其實存在風險。</p>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section id="section1_bridge">
+        <div class="container">
+            <div class="content-div">   
+                <h3 style="text-align: center; font-weight: bolder;">他們真的不該上路嗎？</h3>
+                <h3 style="text-align: center; font-weight: bolder;">即使年紀大了，這些高齡駕駛選擇繼續上路的理由又是什麼呢？</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 第二章：他們的故事 -->
+
+<section id="section2" style="position: relative;">
+    <div style="display: flex;">
+        <img src="assets/ch2.png" width="100%">
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+            <div class="chapter-header" style="position: absolute; top: 30%; left: 45%; ">
+                <div>
+                    <h1 style="font-family: 'Noto Sans CJK SC', sans-serif; font-weight: bold; font-size: 72px;color: #E6C85C;">他們的故事</h1>
+                    <h1 style="font-family: 'Noto Sans CJK SC', sans-serif; font-weight: bold; font-size: 30px;color: #E6C85C;">為何高齡駕駛不信冷冰冰的數據？</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- 三位老人的故事 -->
+
+    <section id="section2_1" class="row" style="height:200vh;   display: flex;">
+        <div class="sticky-top col-6" style="height:100vh;">
+            <img src="assets/老先生.png" style="width: 50%; height: 50%; object-fit: cover;margin-top: 35%; margin-left: 20%;">  
+        </div>
+        <div class="col-6" style="color: white;">
+        <h3>&nbsp;</h3>
+        <h3>&nbsp;</h3>
+        <h3>&nbsp;</h3>
+        <h3>&nbsp;</h3>
+        <h3 style="font-weight: bolder;margin-top: 20%; color:#343a40">台北，劉先生，86歲</h3>
+        <p>&nbsp;</p>
+        <p style="margin-right: 20%;text-align: justify;">劉先生今年已經86歲了，但是那台坐墊後方印著「豪邁奔馳」四字、已有近20年歷史的摩托車，仍然是他生活中的好夥伴。</p>
+        <p style="margin-right: 20%;text-align: justify;">劉先生經常騎著摩托車，在社區內短距離移動，例如他會特意騎車到較遠的巷口倒垃圾。「每天我都會騎摩托車到巷口倒垃圾，這個點雖然不是離家最近的垃圾車停靠點，但人比較少。」</p>
+        <p style="margin-right: 20%;text-align: justify;">另一方面，他平日除了會開車接送孫子，遇上清明掃墓等節日時，他也會開車一路蜿蜒上山。就算下著雨，還是能熟練地倒車。劉先生認為，開車對他來說不是太困難的事情。「坐上車，我可以自由去任何我想去的地方。」他甚至語帶自信地說，「我要開（車）到90歲！」</p>
+        <p style="margin-right: 20%;text-align: justify;">雖然劉先生住在大眾運輸方便的台北市，平時還是會利用捷運、公車移動，但是自駕依然是他最習慣的選擇。</p>
+    </div>
+    </section>
+
+    <section id="section2_2" class="row" style="height:200vh;  display: flex;">
+        <div class="sticky-top col-6" style="height:100vh;">
+            <img src="assets/老太太1.png" style="width: 50%; height: 50%; object-fit: cover;margin-top: 35%; margin-left: 20%;">  
+        </div>
+        <div class="col-6"  style="color: white;">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; color:#343a40">嘉義，陳太太，86歲</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">自駕對於居住在嘉義市、已經86歲的陳太太來說，是再平凡不過的日常。因為子女覺得騎機車較危險，所以她大多選擇開車出門，不過孩子還是常對此感到擔憂。但她覺得自己開車不快，時速大多都維持在30至40公里左右，而且目的都只是出門採買、運動等日常事項，「真的不會造成什麼危險。」</p>
+            <p style="margin-right: 20%;text-align: justify;">對於高齡駕駛相關新聞或事故數據，她則認為，「那都是別人不小心。自己開車慢，也很注意規則，不會有事情。」</p>
+        </div>
+    </section>
+
+    <section id="section2_3" class="row" style="height:200vh;">
+        <div class="sticky-top col-6" style="height:100vh;">
+            <img src="assets/老太太2.png" style="width: 50%; height: 50%; object-fit: cover;margin-top: 35%; margin-left: 20%;">  
+        </div>
+        <div class="col-6" style="color: white;">
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3>&nbsp;</h3>
+            <h3 style="font-weight: bolder;margin-top: 20%; color:#343a40">嘉義，林太太，74歲</h3>
+            <p>&nbsp;</p>
+            <p style="margin-right: 20%;text-align: justify;">同樣住在嘉義市，已經74歲的林太太，平時會開車也會騎車。幾年前曾在下雨天騎車時摔斷手，也曾在開車時因起步不慎擦撞前方的摩托車。</p>
+            <p style="margin-right: 20%;text-align: justify;">雖然家中子女不斷勸說，希望她不要再騎車、開車，但林太太總是說「沒有真的出什麼大意外」、「就是因為有出過小事故，所以才更要開，不然久了就都不會了」。同時，她也認為，可以開車載著鄰居的子女上下學，是一種「成就感」，代表自己還有事可以做，也還是有被需要著。</p>
+            <p style="margin-right: 20%;text-align: justify;">即便有出過意外，但因居住地使然，使用大眾運輸工具相對不便，既沒有捷運、公車，計程車又很昂貴。所以對於未來是否還要自駕的疑問，她也明確的說，「當然，不然怎麼出門？」</p>
+              
+    </div>
+    </section>
+
+ <section id="section2_bridge">
+    <div class="container">
+        <div class="content-div">
+            <div class="slideanimate">
+                <p>歸納高齡仍繼續開車的原因，除了便利性考量、長年養成的自駕習慣之外，對於住在中南部縣市、偏鄉等大眾運輸不若都市發達地區的長者而言，卻是種<span class="spot">不得不的選擇</span>。</p>
+                <p>擔任南投縣營南社區發展協會總幹事17年、擁有6年路老師經驗的吳麗芳說，像營南社區這樣屬於農村型的地方，許多老人還是習慣自己騎腳踏車或是機車。「社區雖然有溫馨巴士，但是長者不見得會用。」</p>
+                <p>吳麗芳指出，社區一直鼓勵當地長者年屆75歲就一定要換照，是因為他們經常需要騎機車短距離移動，<span class="spot">因此確保長者的駕駛能力，就成為重要的檢視目標。</span>「因為我們一直都有在推廣，所以（長輩）很清楚說到了一定年紀就要換照。」她自己除了會督促長輩換照、藉由社區照顧關懷據點的集會時間向他們宣講道安觀念外，也提到針對部分無照長輩，監理站也有到當地輔導考照的經驗。</p>
+                <p>&nbsp;</p>
+                <img src="assets/IMG_2719.JPG" width="100%">
+                <p style="color:#4F5559;text-align: center;font-size: smaller;font-weight: bolder;margin-top: 5px;">路老師們深入社區，向長輩宣講重要的駕駛安全概念。（攝影／林昱妍）</p>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+<!-- 第三章：認知測驗測什麼？ -->
+    <section id="section3">
+        <div class="container">
+            
+            <div class="content-div">                
+                <div class="slideanimate">
+                  <p>&nbsp;</p> 
+                  <p>《道路交通安全規則》第52條之2指出，<span class="spot">台灣年滿75歲的高齡駕駛</span>，若想繼續開車或騎車，就必須經過換照程序。不過這一套「高齡駕駛人駕駛執照管理制度」中，還包含許多關卡。</p>
+                  <p>想成功換照，長者除了須通過「體格檢查」，還需要通過簡易<span class="spot">「認知功能測驗」</span>或檢附「未患中度以上失智症證明」。換照成功後，未來每3年還須至監理站換照，才能繼續保有駕照。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section id="section3_bridge" style="background: linear-gradient(to bottom,#91A6BA 0%, #343a40 100%)">
+    <div class="container">
+        <div class="content-div">
+            <h3 style="text-align: center; font-weight: bolder;">那麼，認知功能測驗，又在測什麼呢？</h3>
+            <p>&nbsp;</p>
+            <p style="text-align: center">下滑觀看實際測驗內容</p>
+            <img src="assets/arrow_down.gif" width="100" height="100" style="margin: 0 auto; display: block;" >
+        </div>
+    </div>
+</section>
+
+<!-- 第三章：測驗內容 -->
+    <section id="section4">
+        <div class="container">
+        <div style="height: 380vh; background-color: #343a40;">
+            
+            <div class="test1">
+                <div class="content-div" style="text-align: center;">
+
+                    <h1 class="text-center" style="font-weight: bolder;color:#EBB5A5">第一關：時間、空間認知</h1>
+                    <p>&nbsp;</p>
+                    <p style="text-align: center;">首先，高齡駕駛必須回答五道基本問題，包括現在的日期、所在地點等。</p>
+                    <p>&nbsp;</p>
+                    <img id="test1_img" src="assets/模擬測驗1.png" width="672" height="727" style="margin: 0 auto; display: block;">      
+                </div>
+            </div>
+
+        
+           <div class="content-div">
+            <h1 class="text-center" style="font-weight: bolder;color:#EBB5A5">第二關：圖卡記憶</h1>
+            <p>&nbsp;</p>
+            <p style="text-align: center;">在這一關中，會先讓高齡駕駛在一段時間內觀看數張圖卡，待圖卡蓋起後，須回答出剛才看過哪些物品。</p>
+            <p style="color: #91A6BA; text-align: center;">*請試試將游標移動到圖卡上方，便能知道該圖案所代表的物品名稱！</p>  
+        </div>    
+        
+            <div class="test2">
+                <div class="card-container">
+                    <div id="card1">
+                    <div class="cover">
+                        <img src="assets/翻翻1.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻15.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card2">
+                    <div class="cover">
+                        <img src="assets/翻翻2.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻14.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card3">
+                    <div class="cover">
+                        <img src="assets/翻翻3.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻10.png">
+                    </div>
+                    </div> 
+                </div>
+                
+                <div class="card-container">
+                    <div id="card4">
+                    <div class="cover">
+                        <img src="assets/翻翻4.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻13.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card5">
+                    <div class="cover">
+                        <img src="assets/翻翻5.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻9.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card6">
+                    <div class="cover">
+                        <img src="assets/翻翻6.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻11.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card7">
+                    <div class="cover">
+                        <img src="assets/翻翻7.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻16.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card8">
+                    <div class="cover">
+                        <img src="assets/翻翻8.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻12.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card9">
+                    <div class="cover">
+                        <img src="assets/翻翻18.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻20.png">
+                    </div>
+                    </div> 
+                </div>
+
+                <div class="card-container">
+                    <div id="card10">
+                    <div class="cover">
+                        <img src="assets/翻翻17.png">
+                    </div>
+                    <div class="back">
+                        <img src="assets/翻翻19.png">
+                    </div>
+                    </div> 
+                </div>
+
+ 
+                <div class="content-div">
+                    <div class="test3">
+                        <h1>&nbsp;</h1>
+                        <h1 class="text-center" style="font-weight: bolder;color:#EBB5A5">第三關：徒手繪畫時鐘</h1>
+                        <p>&nbsp;</p>
+                        <p style="text-align: center;">在最後一關，高齡駕駛須在測驗紙內畫出一個數字位置正確的時鐘，並根據指定題目，繪製出相應的時針與分針位置。</p> 
+                        <p style="text-align: center; color: #91A6BA;">*以下示範以「10點10分」為例。</p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <div class="video-container_clock" style="text-align: center;">
+                            <video autoplay muted loop id="clock" width="500" height="300" style="margin: 0 auto;"> 
+                                <source src="assets/clock.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="section4_bridge" style=" background: linear-gradient(to bottom,#343a40 0%, #91A6BA 100%)">
+        <div class="container">
+            <div class="content-div">
+                <h3>&nbsp;</h3>
+                <h3>&nbsp;</h3>
+                <h3 style="text-align: center; font-weight: bolder;">不過，目前的高齡駕駛換照制度，真的能有效改善高齡駕駛上路時可能衍生出的危險嗎？</h3>
+            </div>
+        </div>
+    </section>
+
+
+<!-- 第四章：換照制度是完美解方？ -->
+    <section id="section5_bridge" style="position: relative;">
+        <div style="display: flex;">
+          <img src="assets/ch4.png" width="100%">
+        </div>
+            
+        <div class="row">
+            <div class="col-4">
+                <div class="chapter-header" style="position: absolute; top: 30%; left: 20%; ">
+                    <div>
+                        <h1 style="font-family: 'Noto Sans CJK SC', sans-serif; font-weight: bold; font-size: 72px;color: #E6C85C;">換照制度</h1>
+                        <h1 style="font-family: 'Noto Sans CJK SC', sans-serif; font-weight: bold; font-size: 72px;color: #E6C85C;">是完美解方？</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <section id="section5">   
+        <div class="container" >
+            <div class="content-div">
+                <div class="slideanimate">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>台北市議員鍾沛君上個月於議會質詢時提到，該制度自2017年7月1日修法施行後，依據法律不溯及既往的原則，在修法施行日前已滿75歲的駕駛所持駕照，在有效期間屆滿後仍屬有效，因此無需換照。修法至今已過了6年，部分81歲以上高齡駕駛反而無需換照，等於<span class="spot">「更老的人卻不受管制」</span>，恐將成為道路安全漏洞。</p>
+                        
+                    <p>另一方面，<span class="spot">高齡換照在部分縣市，其實並沒有想像中的普及。</span>選區在桃園蘆竹區、龜山區、桃園區，目前分配在立法院交通委員會的立委鄭運鵬指出，目前的高齡換照制度雖然還算完善，但是問題就出在高齡駕駛的習慣。例如有些長輩在資訊落差下不知道要換照，同時地方上未必有完善推廣，導致他們在不知情的狀況下違規，即使駕照過期，還是繼續駕駛上路。</p>
+                    <p>&nbsp;</p>
+                    <img src="assets/0首圖.JPG" width="100%">
+                    <p style="color:#4F5559; text-align: center;font-size: smaller;font-weight: bolder; margin-top: 5px;">部分長輩不受法規管制的現狀，以及資訊落差，都可能讓高齡者危險駕駛的狀況持續發生。（攝影／劉騏瑋）</p>
+                    <p>&nbsp;</p>
+            
+                        
+                    <p>成功大學交通管理科學系教授魏健宏表示，支持政府推動高齡換照的政策。因為駕照不是天生就有，而是需要有駕駛技能，經過政府認證、鑑定之後才核發。<span class="spot">「當沒有這個能力的時候，就應該要撤回。」</span>  
+                    <p>但是，針對目前過於簡易的換照測驗程序，魏健宏呼籲，政府應該讓高齡者在換照之前有適性駕駛培訓。藉由讓高齡駕駛參加政府相關機構主辦的交通安全研習課程，除能了解道路規則、交通環境的變化，也包含道路駕駛實作。「就現在的制度而言，即使駕照更新了，我們還是沒有信心。我們真的不知道高齡者在交通環境中是不是能夠安全，<span class="spot">畢竟通過換照，並不代表實際上路就沒問題</span>，那還是讓長者暴露在風險中，這個漏洞真的需要趕快補強。」</p>
+                    <p>&nbsp;</p>
+                    <p>面對多起高齡駕駛交通事故，我們該從什麼角度理解成因？</p>
+                    <p>路老師曾明理以<span class="spot">「起司理論」</span>解釋高齡駕駛的風險──起司上不同的孔洞代表不同的風險因素，「當這些洞彼此對齊、串聯起來時，就會造成事故。」但若社會在教育面、法規面都能針對高齡族群有相關研議與改善，或許就能降低高齡事故的發生。</p>
+                    <h3>&nbsp;</h3>
+                    <img src="assets/cheese_theory.gif" style="width: 70%; margin: 0 auto; display: block;">
+                    <h3>&nbsp;</h3>
+                    <h3 style="font-weight: bolder; text-align: center;">未來，我們可以有哪些解方，改善高齡駕駛的道路安全？</h3>
+                
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+
+<!-- 結語：未來展望 -->
+    <section id="section6_pre"  style="position: relative;">
+        <div style="display: flex;">
+            <img src="assets/ch5.png" width="100%">
+          </div>
+              
+          <div class="row">
+              <div class="col-4">
+                  <div class="chapter-header" style="position: absolute; top: 30%; left: 45%; ">
+                      <div>
+                          <h1 style="font-family: 'Noto Sans CJK SC', sans-serif; font-weight: bold; font-size: 72px;color: #E6C85C;">未來展望</h1>
+                      </div>
+                  </div>
+              </div>
+          </div>
+    </section>
+
+    <section id="section6">
+        <div class="container">
+                
+            <div class="content-div">
+                
+                
+                <div class="slideanimate">
+
+                    <p>&nbsp;</p>
+                    <p>改善的方向，可以從<span class="spot">「道路駕駛」</span>、<span class="spot">「法規」</span>與<span class="spot">「家屬陪伴」</span>這三個層面著手。</p>
+
+                   
+                    <div id="drivingclass">
+                        <p>有20餘年教學經驗的駕訓教練閔昱智，在個人駕訓班內開設高齡駕駛道路駕訓課程，每月約有20至30位長者報名。</p>
+                        <p>「大部分的高齡學員本身是有駕照的，報名課程是為了上路再次練習。」同時他也觀察到，會主動報名課程的學員，多為喪偶，或是子女各自成家立業、退休後需要重拾生活重心的長者。「有些老人獨居，大部分時間是一個人，<span class="spot">但他們也希望能有社交生活，與親朋好友往來，</span>因此需要有更熟練的駕駛技能，才能到更遠的地方串門子、玩樂。」</p>
+                        <p>&nbsp;</p>
+                        <img src="assets/IMG_3472.JPG" width="100%">
+                    </div>
+                    <p style="color:#4F5559; text-align: center;font-size: smaller; font-weight:bolder; margin-top: 5px;">部分尚有駕駛能力的長者，可透過駕訓班課程的實際練習，維持上路手感。（攝影／林昱妍）</p>
+                    <p>&nbsp;</p>
+                    <p>同時，由於日本、韓國等東亞鄰國的高齡換照法定年齡約介於60至70歲之間，目前立法院也正在考量將現行75歲的高齡換照年齡提前至70歲的可能性。如此一來，較能及早預防高齡者的駕駛風險。另一方面，部分民間團體也認為駕駛人應要有定期回檢、回訓機制，才能有效保障上路安全。/p>
+                            
+                    <p>有鑑於許多高齡駕駛發生事故的原因都與反應不及有關，立委邱臣遠透過新聞稿建議，政府應鎖定幾個易肇事路口，針對交通號誌、道路的面向重新規劃，讓年長者有充足的時間可以看清號誌並做出反應。如拉長加速車道、放大號誌尺寸，都是可能形式。</p>
+                     
+                    <p>除此之外，家屬的陪伴與引導，也很重要。</p>
+                            
+                    <p><span class="spot">「老人還是有身為人的權利，因此只要是日常生活中合乎常理的事情，他們應該有做的自由。」</span>臺灣職能治療學會理事長吳菁宜則認為，家屬仍應根據老人的狀態，評估其是否適合繼續駕駛，或是先約定好：晚上不要開車、不開高速公路，只開熟悉的路。
+                            
+                    家屬盡量帶著長輩一起使用大眾交通工具，從旁了解他們在搭乘中可能遇到的問題。<span class="spot">事先安排與漸進式的習慣養成</span>，讓長者不會一下子面臨生活的改變，「若之後老人自覺不太能駕駛時，他們也知道有便利的替代方案，如此一來是比較自然的銜接模式。」</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="end" style="background: linear-gradient(to bottom,#91A6BA 0%, #343a40 100%)">
+      <div class="container">
+        <div class="content-div">
+            <p style="font-size: larger; text-align: center;">每個人都有老去的一天，自駕的日常，也可能會變得充滿挑戰。</p>
+            <p style="font-size: larger; text-align: center;">社會如何透過交通安全教育、制度性的檢測，日益完善高齡者的駕駛之路，將是未來超高齡台灣社會需面臨的挑戰與使命。</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <section id="footer" style="background-color: #343a40;">
+            <div style="padding-top: 10%; padding-bottom: 10%">
+                <p>採訪企劃│劉騏瑋、林昱妍、黃信維</p>
+                <p>文字│劉騏瑋、黃信維</p>
+                <p>攝影│林昱妍、劉騏瑋</p>
+                <p>美術設計│林昱妍</p>
+                <p>網頁工程│劉騏瑋</p>
+                <p>&nbsp;</p>
+                <p>參考資料│交通部道安資訊查詢網、高齡駕駛人認知功能檢測練習平台</p>
+                <p>&nbsp;</p>
+                <p>最後更新│2023.12.27</p>
+                <p>Copyright&copy; 2023 </p>
+            </div>
+       </section>
+    </footer>
+
+    <!--  Bootstrap 的 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!--自訂JavaScript -->
+    <script src="js/elderdriver.js"></script>
+
+    
+
+
+</body>
+</html>
